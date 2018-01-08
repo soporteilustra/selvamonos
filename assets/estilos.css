@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,700');
+body {
+     font-family: 'Open Sans';
+     font-weight: 300;
+}
+header {
+     background-image: url(portada.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center center;
+     min-height: 100vh;
+     position: relative;
+}
+header .brand {
+     text-align: center;
+     width: auto;
+     display: inline-block;
+     position: absolute;
+     top: 15%;
+     left: 20%;
+}
+header .brand h2 {
+     text-transform: uppercase;
+     font-size: 2em;
+}
+header .brand img {
+     height: 240px;
+     display: block;
+     margin: auto;
+     margin-bottom: 1em;
+}
+@media (max-width: 426px) {
+     header .brand {
+          top: 8%;
+          left: 0;
+          width: 100%;
+     }
+     header .brand h2 {
+          font-size: 1.2em;
+     }
+     header .brand img {
+          height: 120px;
+          margin-bottom: 1em;
+     }
+     #exampleModal .modal-body {
+          padding: 1em !important;
+     }
+}
+.gallery {
+     background: #292929;
+}
+.zocalo {
+     background: #ff3a54;
+     padding: 1em 0em;
+     color: #fff;
+     font-size: 1.4em;
+}
+.form {
+     padding: 2em 0em;
+}
+form label {
+     font-weight: 700;
+     color: #292929;
+}
+form button {
+     font-family: 'Open Sans';
+     font-weight: 300;
+}
+footer {
+     padding: 2em 0em;
+     background: #292929;
+     color: #fff;
+     font-weight: 200;
+     font-size: .9em;
+}
+footer a {
+     color: #fff;
+     text-decoration: none;
+}
+footer a:hover {
+     color: #fafafa;
+     text-decoration: none;
+}
+footer .politicies {
+     background: #fff;
+     color: #292929;
+     text-decoration: none;
+     padding: .5em 2em;
+     border-radius: 40px;
+     font-size: 1.1em;
+}
+footer .politicies:hover {
+     color: #292929;
+}
+.logo_derco {
+     height: 40px;
+     width: auto;
+}
+#exampleModal .modal-content {
+     background-image: url(portada.jpg);
+     background-position: center center;
+}
+#exampleModal .modal-header {
+     background: rgba(255, 255, 255, 0.3);
+     color: #292929;
+     font-weight: 700;
+}
+#exampleModal .modal-header h5 {
+     font-weight: 700;
+}
+#exampleModal .modal-body {
+     padding: 2em;
+     text-align: center;
+     background: rgba(255, 255, 255, 0.7);
+}
+#exampleModal .modal-body img {
+     height: 150px;
+     margin: auto;
+     margin-bottom: 2em;
+}
+#exampleModal .modal-body ul {
+     text-align: left;
+}

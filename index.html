@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <title>Haval | Selvámonos</title>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+     <link rel="stylesheet" href="assets/estilos.css">
+</head>
+<body>
+
+     <header>
+          <div class="brand">
+               <h2 class="display-4">¿Quieres tenerlo todo?</h2>
+               <img src="assets/brand.png" class="img-fluid" alt="">
+               <a href="#register" class="btn btn-danger">Gana tus entradas</a>
+          </div>
+     </header>
+
+     <section class="zocalo">
+          <div class="container">
+               <div class="row">
+                    <div class="col-12 text-center">
+                         Llena el formulario y participa del sorteo de entradas para ti y tres amigos para disfrutar el Electroselvámonos este sábado 27 de enero
+                    </div>
+               </div>
+          </div>
+     </section>
+
+     <section class="form" id="register">
+          <div class="container">
+               <div class="row">
+                    <div class="col-12">
+                         <form class="px-4 p-lg-0" action="controller/enviar.php" method="post">
+                              <div class="form-group row">
+                                   <label for="" class="col-md-4">Nombre y apellidos:</label>
+                                   <input type="text" name="nombres" class="form-control col-md-8" required="true" value="">
+                              </div>
+                              <div class="form-group row">
+                                   <label for="" class="col-md-4">Correo electrónico:</label>
+                                   <input type="email" name="correo" class="form-control col-md-8" required value="">
+                              </div>
+                              <div class="form-group row">
+                                   <label for="" class="col-md-4">Celular:</label>
+                                   <input type="text" name="celular" class="form-control col-md-8" required value="">
+                              </div>
+                              <div class="form-group row">
+                                   <label for="" class="col-md-4">Edad:</label>
+                                   <input type="text" name="edad" class="form-control col-md-8" required value="">
+                              </div>
+                              <div class="form-group row">
+                                   <label for="" class="col-md-4">DNI:</label>
+                                   <input type="text" name="dni"  class="form-control col-md-8" required value="">
+                              </div>
+                              <div class="form-group row">
+                                   <label for="" class="col-md-4">Distrito:</label>
+                                   <input type="text" name="distrito" class="form-control col-md-8" required value="">
+                              </div>
+                              <div class="form-group row">
+                                   <label for="" class="col-md-4">Ciudad:</label>
+                                   <input type="text" name="ciudad" class="form-control col-md-8" required value="">
+                              </div>
+                              <div class="form-group row">
+                                   <label for="" class="col-md-4">N. de placa de tu Haval (*)</label>
+                                   <input type="text" name="placa" class="form-control col-md-8" required value="">
+                                   <small class="text-muted col-8 offset-md-4">(*) Doble oportunidad de ganar</small>
+                              </div>
+                              <div class="form-group text-center">
+                                   <button type="submit" class="btn btn-lg btn-danger">Participar!</button>
+                              </div>
+                         </form>
+                    </div>
+               </div>
+          </div>
+     </section>
+
+     <section class="gallery">
+          <div class="container-fluid">
+               <div class="row justify-content-center">
+                    <div class="col col-lg-auto p-0">
+                         <img src="assets/selva1.png"  class="img-fluid" alt="gallery_one">
+                    </div>
+                    <div class="col col-lg-auto p-0">
+                         <img src="assets/selva2.png"  class="img-fluid" alt="gallery_two">
+                    </div>
+                    <div class="col col-lg-auto p-0">
+                         <img src="assets/selva3.png"  class="img-fluid" alt="gallery_three">
+                    </div>
+               </div>
+          </div>
+     </section>
+
+     <footer>
+          <div class="container">
+               <div class="row">
+                    <div class="col-12 text-center mb-4">
+                         <a href="#" class="politicies" data-toggle="modal" data-target="#exampleModal">ver términos y condiciones</a>
+                    </div>
+                    <div class="col-12">
+                         <div class="row justify-content-between align-items-center">
+                              <div class="col-lg-auto">
+                                   <ul class="list-unstyled list-inline p-0 m-0">
+                                        <li class="list-inline-item"><a href="#"> <i class="fa fa-globe"></i> Haval global</a> </li>
+                                        <li class="list-inline-item"><a href="#"> <i class="fa fa-mobile"></i> Haval responde 51-1-7135000</a> </li>
+                                   </ul>
+                              </div>
+                              <div class="col-lg-auto">
+                                   <div class="row align-items-center">
+                                        <div class="col-lg-auto">
+                                             Todos los derechos reservados Derco S.A
+                                        </div>
+                                        <div class="col-lg-auto">
+                                             <img src="assets/derco_grande.jpg" class="img-fluid logo_derco" alt="derco_logo">
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </footer>
+
+     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+       <div class="modal-dialog" role="document">
+         <div class="modal-content">
+           <div class="modal-header">
+             <h5 class="modal-title" id="exampleModalLabel">HAVAL</h5>
+             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+               <span aria-hidden="true">&times;</span>
+             </button>
+           </div>
+           <div class="modal-body">
+                <img src="brand.png" class="img-fluid" alt="">
+                <p>Deberás cumplir las siguientes condiciones al momento de tu inscripción:</p>
+                <ul>
+                     <li>Tener 18 o más años de edad</li>
+                     <li>Ser residente de Lima Metropolitana o el Callao</li>
+                </ul>
+                <p>(*) Tener tu Haval ( cualquier modelo ) te da doble oportunidad de ganar</p>
+           </div>
+         </div>
+       </div>
+     </div>
+
+
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+</body>
+</html>
